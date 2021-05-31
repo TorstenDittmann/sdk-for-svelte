@@ -5,7 +5,12 @@ export interface VerificationProps {}
 
 export default class Verification extends SvelteComponentTyped<
   VerificationProps,
-  {},
+  {
+    successCreate: CustomEvent<any>;
+    failureCreate: CustomEvent<any>;
+    successComplete: CustomEvent<any>;
+    failureComplete: CustomEvent<any>;
+  },
   {
     default: {
       actions: {

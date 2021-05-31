@@ -5,7 +5,14 @@ export interface UpdateProps {}
 
 export default class Update extends SvelteComponentTyped<
   UpdateProps,
-  {},
+  {
+    successName: CustomEvent<any>;
+    failureName: CustomEvent<any>;
+    successEmail: CustomEvent<any>;
+    failureEmail: CustomEvent<any>;
+    successPassword: CustomEvent<any>;
+    failurePassword: CustomEvent<any>;
+  },
   {
     default: {
       actions: {

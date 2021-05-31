@@ -5,7 +5,12 @@ export interface RecoverPasswordProps {}
 
 export default class RecoverPassword extends SvelteComponentTyped<
   RecoverPasswordProps,
-  {},
+  {
+    successRecover: CustomEvent<any>;
+    failureRecover: CustomEvent<any>;
+    successComplete: CustomEvent<any>;
+    failureComplete: CustomEvent<any>;
+  },
   {
     default: {
       actions: {

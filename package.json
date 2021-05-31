@@ -2,16 +2,16 @@
   "name": "svelte-appwrite",
   "svelte": "src/index.js",
   "license": "BSD-3-Clause",
-  "version": "0.3.0-beta",
+  "version": "0.3.1-beta",
   "scripts": {
     "lint": "eslint src/",
     "prettier": "prettier --write --plugin-search-dir= ./src/**/*.{js,svelte}",
-    "typings": "sveld --markdown"
+    "typings": "rollup -c"
   },
   "devDependencies": {
     "eslint": "^7.8.1",
     "eslint-plugin-svelte3": "^3.0.0",
-    "husky": "^5.0.9",
+    "husky": "^6.0.0",
     "npm-run-all": "^4.1.5",
     "prettier": "^2.1.1",
     "prettier-plugin-svelte": "^2.1.4",
@@ -27,7 +27,7 @@
   ],
   "types": "./types/index.d.ts",
   "dependencies": {
-    "appwrite": "^3.0.1"
+    "appwrite": "^3.0.4"
   },
   "husky": {
     "hooks": {

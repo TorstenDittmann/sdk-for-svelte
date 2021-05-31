@@ -234,7 +234,10 @@ None.
 
 ### Events
 
-None.
+| Event name | Type       | Detail |
+| :--------- | :--------- | :----- |
+| success    | dispatched | --     |
+| failure    | dispatched | --     |
 
 ## `Document`
 
@@ -438,7 +441,12 @@ None.
 
 ### Events
 
-None.
+| Event name    | Type       | Detail |
+| :------------ | :--------- | :----- |
+| success       | dispatched | --     |
+| failure       | dispatched | --     |
+| successUpdate | dispatched | --     |
+| failureUpdate | dispatched | --     |
 
 ## `QR`
 
@@ -475,7 +483,12 @@ None.
 
 ### Events
 
-None.
+| Event name      | Type       | Detail |
+| :-------------- | :--------- | :----- |
+| successRecover  | dispatched | --     |
+| failureRecover  | dispatched | --     |
+| successComplete | dispatched | --     |
+| failureComplete | dispatched | --     |
 
 ## `Storage`
 
@@ -512,7 +525,14 @@ None.
 
 ### Events
 
-None.
+| Event name      | Type       | Detail |
+| :-------------- | :--------- | :----- |
+| successName     | dispatched | --     |
+| failureName     | dispatched | --     |
+| successEmail    | dispatched | --     |
+| failureEmail    | dispatched | --     |
+| successPassword | dispatched | --     |
+| failurePassword | dispatched | --     |
 
 ## `User`
 
@@ -569,4 +589,9 @@ None.
 
 ### Events
 
-None.
+| Event name      | Type       | Detail |
+| :-------------- | :--------- | :----- |
+| successCreate   | dispatched | --     |
+| failureCreate   | dispatched | --     |
+| successComplete | dispatched | --     |
+| failureComplete | dispatched | --     |
